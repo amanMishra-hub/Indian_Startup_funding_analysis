@@ -1,1 +1,0 @@
-# Indian_Startup_funding_analysis
