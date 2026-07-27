@@ -37,7 +37,7 @@ The dataset suffers from severe sector mislabelling (e.g., Razorpay tagged as "E
 
 ### Reclassification Results
 #### Sector Distribution Change
-![Before vs After Reclassification](viz_reclassification(1)_impact.png)
+![Before vs After Reclassification](viz_reclassification_impact(1).png)
 #### Reclassification Layer Usage
 ![Layer Usage](viz_reclassification_layers(1).png)
 #### Confidence Distribution
