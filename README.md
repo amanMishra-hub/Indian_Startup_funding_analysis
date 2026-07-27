@@ -20,64 +20,8 @@
 | **Top Sector** | Ecommerce/D2C (205 deals) |
 | **Median Deal Size** | $1.1M |
 
----
 
-## 🏗️ Project Structure
 
-```
-├── data/                           # Raw datasets
-│   ├── 2020-2025/                  # Primary dataset (1,100 deals)
-│   ├── 2024-dataset/               # 2024-only supplement
-│   └── 2024-2025/                  # 2024-2025 supplement
-│
-├── notebooks/
-│   └── indian_startup_funding_analysis.ipynb   # Main analysis notebook
-│
-├── scripts/
-│   ├── sector_reclassifier.py      # 3-layer sector reclassification system
-│   ├── generate_powerbi_data.py    # Power BI data generator
-│   ├── generate_analysis_csvs.py   # Tableau/CSV data generator
-│   ├── analyze_single_dataset.py   # Standalone analysis script
-│   ├── generate_excel.py           # Excel export utility
-│   └── create_dashboard.py         # HTML dashboard generator
-│
-├── outputs/
-│   ├── cleaned_startup_data.csv    # Cleaned dataset
-│   ├── reclassified_startup_data.csv  # Reclassified dataset
-│   ├── startup_funding_analysis_output.xlsx  # Analysis Excel workbook
-│   ├── powerbi_startup_dashboard.xlsx  # Power BI data source (17 sheets)
-│   └── startup_funding.db         # SQLite database
-│
-├── visualizations/                 # Generated charts (dark theme)
-│   ├── viz1_yoy_trend.png
-│   ├── viz2_sector_heatmap.png
-│   ├── viz3_stage_mix.png
-│   ├── viz4_city_funding.png
-│   ├── viz5_top_investors.png
-│   ├── viz6_sector_stage.png
-│   ├── viz7_seasonality.png
-│   ├── viz8_projection.png
-│   ├── viz9_sector_cagr.png
-│   ├── viz_reclassification_impact.png
-│   ├── viz_reclassification_layers.png
-│   └── viz_reclassification_confidence.png
-│
-├── tableau_outputs/                # Tableau-ready CSVs + guide
-├── powerbi/                        # Power BI theme + guide
-│   ├── mckinsey_theme.json
-│   └── POWERBI_GUIDE.md
-│
-├── sql/
-│   └── startup_funding_analysis.sql  # All SQL queries
-│
-├── dashboard/
-│   └── McKinsey_Startup_Dashboard.html  # Interactive HTML dashboard
-│
-├── requirements.txt
-└── README.md
-```
-
----
 
 ## 🔬 3-Layer Sector Reclassification
 
@@ -93,11 +37,11 @@ The dataset suffers from severe sector mislabelling (e.g., Razorpay tagged as "E
 
 ### Reclassification Results
 #### Sector Distribution Change
-![Before vs After Reclassification](viz_reclassification_impact.png)
+![Before vs After Reclassification](viz_reclassification(1)_impact.png)
 #### Reclassification Layer Usage
-![Layer Usage](viz_reclassification_layers.png)
+![Layer Usage](viz_reclassification_layers(1).png)
 #### Confidence Distribution
-![Confidence](viz_reclassification_confidence.png)
+![Confidence](viz_reclassification_confidence(1).png)
 
 ---
 
